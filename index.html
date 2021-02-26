@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container-form">
+        <input type="number" value="1000" id="inversion">
+        <input type="number" value="15" id="interes">
+        <select name="" value="Mensual" id="frecuencia">
+            <option value="Mensual">mensual</option>
+            <option value="Anual">Anual</option>
+            <option value="Diario">Diario</option>
+        </select>
+    </div>
+    <div id="container-button">
+        <button id="procesar">CALCULAR</button>
+    </div>
+    <section id="container">
+        <p>inversion: <span class="render-inversion"></span></p>
+        <p>interes: <span id="render-interes"></span></p>
+        <p>frecuencia: <span id="render-frecuencia"></span></p>
+        <p>hoy: <span id="render-hoy"></span></p>
+        <p>si cada mes invertis esa cantidad fija</span> en dos años tendrias: <span id="inversionADosAños"></span></p>
+        <p>Pero si reinvirtieses tambien las ganancias entonces: </p>
+        <p>Para el dia <span id="millon"></span> tendrias mas de un millon de pesos</p>
+        <p><span id="porcentaje"></span></p>
+    </section>
+    <script src="millon.js"></script>
+</body>
+</html>
